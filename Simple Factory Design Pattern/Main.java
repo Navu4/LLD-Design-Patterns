@@ -7,5 +7,17 @@ public class Main {
         debugLogger.log("This is a debug log msg");
         infoLogger.log("This is an info log msg");
         errorLogger.log("This is an error log msg");
+
+
+
+
+        IShape circle = ShapeFactory.getShape(ShapeType.CIRCLE);
+        IShape square = ShapeFactory.getShape(ShapeType.SQUARE);
+        IShape rectangle = ShapeFactory.getShape(ShapeType.RECTANGLE);
+
+
+        circle.display();
+        square.display();
+        rectangle.display();
     }
 }
